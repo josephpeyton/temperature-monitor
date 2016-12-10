@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link data-require="bootstrap-css@*" data-semver="3.3.6" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body ng-app="app">
+  
+  <temperature-monitor-directive></temperature-monitor-directive>
+  
+  <hr><hr>
+  
+  <footer-directive></footer-directive>
+  
+  <script data-require="angular.js@*" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.min.js"></script>
+  <!-- Module -->
+  <script src="app.js"></script>
+  
+  <!-- Directives -->
+  <script src="temperatureMonitor.directive.js"></script>
+  <script src="footer.directive.js"></script>
+  
+  <!-- Controllers -->
+  <script src="temperatureMonitor.controller.js"></script>
+  
+  <!-- Services -->
+  <script src="temperatureMonitor.service.js"></script>
+</body>
+</html>
