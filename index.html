@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 
 <head>
   <link data-require="bootstrap-css@*" data-semver="3.3.6" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body ng-app="app">
-  
-  <temperature-monitor-directive></temperature-monitor-directive>
-  
-  <hr><hr>
-  
-  <footer-directive></footer-directive>
-  
+<body>
+  <h1>Temperature Monitor</h1>
+  <form>
+    <label for="temperature">Add Temperature:</label>
+    <input name="temperature" id="temperature">
+    <button>Add</button>
+  </form>
+  <hr />
+  <section>
+    <button>Get Median Temperature</button>
+    Current Medi:
+    <!-- display current media here-->
+  </section>
+  <hr/>
+  <hr/>
+  <p>developer name: Joseph Peyton</p>
+
+  <hr/>
+  <a href="jasmine-test-runner.html">Run Unit Tests</a>
   <script data-require="angular.js@*" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.min.js"></script>
-  <!-- Module -->
   <script src="app.js"></script>
-  
-  <!-- Directives -->
-  <script src="temperatureMonitor.directive.js"></script>
-  <script src="footer.directive.js"></script>
-  
-  <!-- Controllers -->
-  <script src="temperatureMonitor.controller.js"></script>
-  
-  <!-- Services -->
-  <script src="temperatureMonitor.service.js"></script>
+  <script src="example.js"></script>
 </body>
+
 </html>

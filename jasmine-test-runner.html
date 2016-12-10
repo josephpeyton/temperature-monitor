@@ -7,11 +7,17 @@
   <script data-require="jasmine@*" data-semver="2.4.1" src="//cdn.jsdelivr.net/jasmine/2.4.1/boot.js"></script>
   <script data-require="angular.js@*" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
   <script data-require="angular.js@*" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular-mocks.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="coverage/jasmine-html.js"></script>
+  <script src="coverage/blanket.js" ></script>
+  <script src="coverage/blanket_jasmine.js"></script>
   <script src="app.js"></script>
-  <script src="temperatureMonitor.service.js"></script>
-  <script src="temperatureMonitor.spec.js"></script>
-  <!-- add tests file references here if need be-->
+  <script src="example.js" data-cover></script>
+  <script src="example.spec.js"></script>
+  <!-- add tests file references here if need be -->
+  <!-- don't forget the data-cover attribute when you reference the file to be tested, it will activate the code coverage -->
+  <!-- <script src="temperature-monitor.service.js" data-cover></script> -->
+  <!-- but the data-cover attribute is not required for .spec.js files -->
+  <!-- <script src="temperature-monitor.service.spec.js"></script> -->
   
   <!-- documentation for jasmine can be found at http://jasmine.github.io/2.4/introduction.html -->
 </head>
